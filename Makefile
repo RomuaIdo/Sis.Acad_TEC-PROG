@@ -1,28 +1,30 @@
 CC = g++
 
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 
 
-VERSIONS = v1.0 v1.1 v1.2
+VERSIONS = v1.0 v2.0 v3.0 v4.0
 
 all: $(VERSIONS)
 
 $(VERSIONS):
-	$(MAKE) -C $@
+	$(MAKE) -C $@ TARGET_NAME=$@
+
+run-%:
+	@if [ -f "$*/bin/programa_$*" ]; then \
+		echo "Executando $*..."; \
+		cd $* && ./bin/$*_programa; \
+	else \
+		$(MAKE) -C $* TARGET_NAME=$* && \
+		echo "Executando..." && \
+		cd $* && ./bin/$*_programa; \
+	fi
+
 
 clean:
 	@for dir in $(VERSIONS); do \
 		$(MAKE) -C $$dir clean; \
 	done
 
-v1.0:
-	$(MAKE) -C $@
 
-v1.1:
-	$(MAKE) -C $@
-
-v1.2:
-	$(MAKE) -C $@
-
-
-.PHONY: all clean $(VERSIONS)
+.PHONY: all run-% clean $(VERSIONS)
