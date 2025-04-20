@@ -1,2 +1,2 @@
 # Sis.Acad_TEC-PROG
-Sistema Academico desenvoldo durante a disciplina de Técnicas de Programação na UTFPR.
+Sistema Academico desenvolvido durante a disciplina de Técnicas de Programação na UTFPR.
