@@ -85,16 +85,20 @@ void Principal::InicializaDisciplinas() {
   Teoria_dos_numeros.setDepartamento(&MatematicaCambridge);
 
   // Adiciona alunos as disciplinas
-  aluno1.Inicializa("Aluno 1", 123456, 1, 1, 2000);
-  aluno2.Inicializa("Aluno 2", 123457, 1, 1, 2000);
-  aluno3.Inicializa("Aluno 3", 123458, 1, 1, 2000);
-  aluno4.Inicializa("Aluno 4", 123459, 1, 1, 2000);
-  aluno5.Inicializa("Aluno 5", 123460, 1, 1, 2000);
-  Tecnicas_de_Programacao.incluaAluno(&aluno1);
-  Tecnicas_de_Programacao.incluaAluno(&aluno2);
-  Tecnicas_de_Programacao.incluaAluno(&aluno3);
-  Tecnicas_de_Programacao.incluaAluno(&aluno4);
+  aluno1.Inicializa("Lirili Larila", 123456, 1, 1, 2000);
+  aluno2.Inicializa("Tralalero Tralala", 123457, 1, 1, 2000);
+  aluno3.Inicializa("Trulimero Trulicina", 123458, 1, 1, 2000);
+  aluno4.Inicializa("Bombardilo Crocodilo", 123459, 1, 1, 2000);
+  aluno5.Inicializa("Tung Tung Tung Sahur", 123460, 1, 1, 2000);
   Tecnicas_de_Programacao.incluaAluno(&aluno5);
+  Tecnicas_de_Programacao.incluaAluno(&aluno4);
+  Tecnicas_de_Programacao.incluaAluno(&aluno3);
+  Tecnicas_de_Programacao.incluaAluno(&aluno2);
+  Tecnicas_de_Programacao.incluaAluno(&aluno1);
+  Fundamentos_de_Programacao1.incluaAluno(&aluno1);
+  Fundamentos_de_Programacao1.incluaAluno(&aluno2);
+  Fundamentos_de_Programacao1.incluaAluno(&aluno3);
+  Fundamentos_de_Programacao1.incluaAluno(&aluno5);
 }
 
 void Principal::CalculaIdadeProfs() {

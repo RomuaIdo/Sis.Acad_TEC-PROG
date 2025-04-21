@@ -14,7 +14,7 @@ private:
   int mes;
   int ano;
   int idade;
-  char nomeP[30];
+  char nomeP[100];
 
 public:
   Pessoa();

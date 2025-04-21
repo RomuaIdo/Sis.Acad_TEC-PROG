@@ -10,20 +10,21 @@ using std::endl;
 
 class Universidade;
 class Disciplina;
+class ElDisciplina;
 
 class Departamento{
 private:
   int id;
   char nomeD[200];
   Universidade* pUniv;
-  Disciplina* pDisciplinaPrim;
-  Disciplina* pDisciplinaAtual;
+  ElDisciplina* pElDisciplinaPrim;
+  ElDisciplina* pElDisciplinaAtual;
 
 
 public:
   Departamento();
   ~Departamento();
-  void Inicializa(char* nomeNa = "", Universidade* puni = NULL, Disciplina* pDisciplina = NULL, int idNa = -1);
+  void Inicializa(char* nomeNa = "", Universidade* puni = NULL, int idNa = -1);
   char* getNome();
   void setNome(char* nomeNa = "");
   void setUniversidade(Universidade* puni = NULL);

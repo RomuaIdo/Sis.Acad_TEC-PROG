@@ -1,3 +1,5 @@
+#ifndef _PROFESSOR_H_
+#define _PROFESSOR_H_
 #include "Pessoa.h"
 
 
@@ -19,3 +21,5 @@ public:
   void OndeTrabalho();
   void QualDepartamentoTrabalho();
 };
+
+#endif
