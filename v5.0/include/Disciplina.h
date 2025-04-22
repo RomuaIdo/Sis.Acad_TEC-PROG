@@ -15,10 +15,7 @@ private:
   int NumMaxAlunos;
   int NumAlunos;
   int AulasSemanais;
-  int NumAvaliacoes;
   double media;
-  Disciplina *pProx;
-  Disciplina *pAnt;
   ElAluno *pElAlunoPrim;
   ElAluno *pElAlunoAtual;
 
@@ -39,10 +36,6 @@ public:
   Departamento *getDepartamento();
   void setArea_do_conhecimento(char area_do_conhecimentoNA[] = "");
   char *getArea_do_conhecimento();
-  void setProx(Disciplina *prox = NULL);
-  void setAnt(Disciplina *ant = NULL);
-  Disciplina *getProx();
-  Disciplina *getAnt();
   void setNumMaxAlunos(int max = 45);
   int getNumMaxAlunos();
   void setNumAlunos(int num = 0);

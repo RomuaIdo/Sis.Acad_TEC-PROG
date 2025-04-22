@@ -21,8 +21,6 @@ Disciplina::~Disciplina() {
   }
   pElAlunoPrim = NULL;
   pElAlunoAtual = NULL;
-  pProx = NULL;
-  pAnt = NULL;
 }
 
 void Disciplina::Inicializa(int idNa, char nomeNa[],
@@ -32,8 +30,6 @@ void Disciplina::Inicializa(int idNa, char nomeNa[],
   setId(idNa);
   setNome(nomeNa);
   setDepartamento(pDpto);
-  pProx = NULL;
-  pAnt = NULL;
   pElAlunoPrim = NULL;
   pElAlunoAtual = NULL;
   setNumAlunos(0);
@@ -64,14 +60,6 @@ void Disciplina::setArea_do_conhecimento(char area_do_conhecimentoNA[]) {
 }
 
 char *Disciplina::getArea_do_conhecimento() { return area_do_conhecimento; }
-
-void Disciplina::setProx(Disciplina *prox) { pProx = prox; }
-
-void Disciplina::setAnt(Disciplina *ant) { pAnt = ant; }
-
-Disciplina *Disciplina::getProx() { return pProx; }
-
-Disciplina *Disciplina::getAnt() { return pAnt; }
 
 void Disciplina::setNumMaxAlunos(int max) { NumMaxAlunos = max; }
 
