@@ -1,0 +1,19 @@
+#include "../../include/Aluno/Aluno.h"
+
+Aluno::Aluno() {
+  Pessoa::Inicializa();
+  Inicializa();
+}
+
+Aluno::~Aluno() {}
+
+void Aluno::Inicializa(char nomeNa[], int RA, int dia, int mes, int ano) {
+  Pessoa::Inicializa(dia, mes, ano, nomeNa);
+  setRA(RA);
+}
+
+void Aluno::setRA(int Ra) { RA = Ra; }
+
+int Aluno::getRA() { return RA; }
+
+
